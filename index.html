@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.ball{
+			height: 150px;
+			width: 150px;
+			background: red;
+			border-radius: 50%;
+			position: absolute;
+			
+		}
+	</style>
+</head>
+<body>
+	<h1>Очки: <span class="score">0</span></h1>
+	
+	<div class="ball" style="margin-left: 10%; margin-top: 10%"></div>
+	<div class="ball" style="margin-left: 20%; margin-top: 5%"></div>
+	<div class="ball" style="margin-left: 60%; margin-top: 25%"></div>
+	<div class="ball" style="margin-left: 30%; margin-top: 19%"></div>
+	<div class="ball" style="margin-left: 5%; margin-top: 30%"></div>
+	<div class="ball" style="margin-left: 25%; margin-top: 41%"></div>
+	<div class="ball" style="margin-left: 49%; margin-top: 40%"></div>
+	<div class="ball" style="margin-left: 40%; margin-top: 10%"></div>
+	<div class="ball" style="margin-left: 80%; margin-top: 15%"></div>
+	<div class="ball" style="margin-left: 75%; margin-top: 30%"></div>
+	
+	<script type="text/javascript">
+		let s4ot = 0
+		let kaka = document.querySelectorAll(".ball") 
+		let kaka2 = function(){
+			for(let index = 0; index<10; index = index + 1){
+			kaka[index].style.display = "none";
+}
+		}
+
+/*
+		kaka[0].onclick = function (){
+			kaka[0].style.display = "none";
+			s4ot += 1
+			document.querySelector(".score").innerHTML = s4ot
+		}
+
+		kaka[1].onclick = function (){
+			kaka[1].style.display = "none";
+			s4ot += 1
+			document.querySelector(".score").innerHTML = s4ot
+		}
+
+		kaka[2].onclick = function (){
+			kaka[2].style.display = "none";
+			s4ot += 1
+			document.querySelector(".score").innerHTML = s4ot
+		}
+
+		kaka[3].onclick = function (){
+			kaka[3].style.display = "none";
+			s4ot += 1
+			document.querySelector(".score").innerHTML = s4ot
+		}
+
+		kaka[4].onclick = function (){
+			kaka[4].style.display = "none";
+			s4ot += 1
+			document.querySelector(".score").innerHTML = s4ot
+		}
+
+		kaka[5].onclick = function (){
+			kaka[5].style.display = "none";
+			s4ot += 1
+			document.querySelector(".score").innerHTML = s4ot
+		}
+
+		kaka[6].onclick = function (){
+			kaka[6].style.display = "none";
+			s4ot += 1
+			document.querySelector(".score").innerHTML = s4ot
+		}
+
+		kaka[7].onclick = function (){
+			kaka[7].style.display = "none";
+			s4ot += 1
+			document.querySelector(".score").innerHTML = s4ot
+		}
+
+		kaka[8].onclick = function (){
+			kaka[8].style.display = "none";
+			s4ot += 1
+			document.querySelector(".score").innerHTML = s4ot
+		}
+
+		kaka[9].onclick = function (){
+			kaka[9].style.display = "none";
+			s4ot += 1
+			document.querySelector(".score").innerHTML = s4ot
+		} */
+
+		setTimeout(kaka2,3000)
+
+		for(let index = 0; index<10; index = index + 1){
+		kaka[index].onclick = function (){
+			kaka[index].style.display = "none";
+			s4ot += 1
+			document.querySelector(".score").innerHTML = s4ot
+		};
+}
+	</script>
+</body>
+</html>
